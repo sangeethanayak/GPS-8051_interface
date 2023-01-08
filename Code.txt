@@ -48,15 +48,15 @@ void main()                                 //Main function
    AGAIN:
    loop: 
 	while(RI==0);                          //Receiver Interrupt
-		RI=0;
-		if(SBUF!='$')                      //Starting character
-		{
-		goto loop;
-		}
-		for(f=0;f<=5;f++)                  //To receive 6 successive characters
-		 {
+    	 RI=0;
+		 if(SBUF!='$')                      //Starting character
+	     {
+		  goto loop;
+	     }
+		  for(f=0;f<=5;f++)                  //To receive 6 successive characters
+		  {
                 namegps[f]=rx();           //Store received characters in the function rx()
-            }
+          }
             checkgps=strcmp(namegps,name1gps);     //String comparison (checkgps = 0; strings are equal)   
 		   if(checkgps==0) 
 		   {
@@ -64,7 +64,7 @@ void main()                                 //Main function
 				{
                     gpsdat[f]=rx();     
                 }
-				}
+           }
 				if(gpsdat[10]=='A')               //If character 'A' is received it means that GPS is activated
 				{
 				cmd(0x01);
@@ -151,7 +151,7 @@ void main()                                 //Main function
 			    dat(gpsdat[4]);
 			    dat(gpsdat[5]);
 			    delay1(2000);
-			    
+               
 			     /* Program to convert time from UTC format to IST format
 			        x = gpsdat[2]-48;
 				y=gpsdat[1]-48;
@@ -218,8 +218,8 @@ void main()                                 //Main function
 				dat(a);
 				dat(gpsdat[3]);
 				delay1(2000);
-				}
 				*/
+	}	
 }
 
 
