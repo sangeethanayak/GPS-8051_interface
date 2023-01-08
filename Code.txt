@@ -139,8 +139,21 @@ void main()                                 //Main function
 				delay1(1000);
 				cmd(0x01);
 			   cmd(0x80);
-			   show("      TIME      ");           //To display time in IST
-			    x = gpsdat[2]-48;
+			   show("      TIME      ");           //To display time 
+			    cmd(0xc6);
+			    //To display time in UTC format 
+			    dat(gpsdat[0]);
+			    dat(gpsdat[1]);
+			    dat(':');
+			    dat(gpsdat[2]);
+			    dat(gpsdat[3]);
+			    dat(':');
+			    dat(gpsdat[4]);
+			    dat(gpsdat[5]);
+			    delay1(2000);
+			    
+			     /* Program to convert time from UTC format to IST format
+			        x = gpsdat[2]-48;
 				y=gpsdat[1]-48;
 				z=gpsdat[0]-48;
 				x=x+3;
@@ -211,6 +224,7 @@ void main()                                 //Main function
 				dat(gpsdat[3]);
 				delay1(2000);
 				}
+				*/
 }
 
 
