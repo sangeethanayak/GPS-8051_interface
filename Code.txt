@@ -163,11 +163,6 @@ void main()                                 //Main function
 					y=y+1;
 				}
 				y=y+5;
-
-				if(y<10)
-				{
-
-				}
 				if(y>=10)
 				{
 				 	y=y%10;
