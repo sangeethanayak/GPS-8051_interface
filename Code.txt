@@ -290,5 +290,5 @@ so that 1.085us X 1275 = 1.383 ms (appx 1ms delay)
 void lcd_delay()
 {
     unsigned int lcd_delay;
-    for(lcd_delay=0;lcd_delay<=6000;lcd_delay++);            //Delay of 6ms
+    for(lcd_delay=0; lcd_delay<=6000; lcd_delay++);            //Delay of 6ms
 }
