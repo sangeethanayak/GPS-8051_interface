@@ -30,6 +30,7 @@
 <ul>
 <li><a href="https://drive.google.com/file/d/1pNNRuL1nMuhQHxjJ9_W4Bsm0sp1NyNhQ/view">Components list</a></li>
 <li><a href="https://www.youtube.com/watch?v=hUxq-E02-Vc">Assembling components for 8051/W78E052D development board</a></li>
+<li><a href="https://www.youtube.com/watch?v=Bpgdfomze58">Generating Hex file</a></li>
 <li><a href="https://www.youtube.com/watch?v=XtOmZBMXly8">Flashing W78E052D with serial bootloader application Nuvoton ISP-ICP</a>
 </ul>
 
